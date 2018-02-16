@@ -3,10 +3,10 @@ rm ip.ip 2> /dev/null
 clear
 echo "DarksideBlack" > squidban
 squidfail=$(cat squidban)
-echo "@PremiumPlay" > squidcre
+echo "PremiumPlay" > squidcre
 squidcre=$(cat squidcre)
 if grep -i DarksideBlack squidban 1>/dev/null 2>/dev/null ; then
-echo -e "\033[1;33m- - - - -> \033[01;34mSCRIPT BY @"$DarksideBlack"\033[01;33m CANAL: @"$PremiumPlay"\033[0m"
+echo -e "\033[1;33m- - - - -> \033[01;34mSCRIPT BY @"$squidfail"\033[01;33m CANAL: @"$squidcre"\033[0m"
 else ###########
 echo "falhou"
 exit ##########
@@ -15,7 +15,7 @@ cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/  //' > /etc/s
 echo -e "\033[01;31mNO ME RESPONSABILIZO POR CUALQUER DANO \033[0m"
 echo -e "DIGITE SU IP DEL SERVIDOR PARA CONTINUAR, LUEGO PRESIONE ENTER" ; read ip
 clear
-echo -e "\033[1;33m- - - - -> \033[01;34mSCRIPT BY @"$DarksideBlack"\033[01;33m CANAL: @"$PremiumPlay"\033[0m"
+echo -e "\033[1;33m- - - - -> \033[01;34mSCRIPT BY @"$squidfail"\033[01;33m CANAL: @"$squidcre"\033[0m"
 echo -e "\033[1;33m- - - - -> \033[01;34mSISTEMA OPERACIONAl:\033[0m $(cat /etc/so)"
 echo -e "\033[1;33m- - - - -> \033[01;34mSU IP SSH/SQUID:\033[0m $ip"
 echo -e "\033[1;33m- - - - -> \033[01;34mUSTED DEBE USAR:\033[0m 127.0.0.1\033[1;33m NO HOST SSH"
